@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calcu.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#FF87CA" Padding="12" CornerRadius="0">
+            <Label Text="Calculadora" HorizontalTextAlignment="Start" TextColor="White" FontSize="Title"/>
+        </Frame>
+        <Frame BackgroundColor="#EAEAEA" Padding="16">
+            <Label x:Name="resultadoGlobal" Text="0"  HorizontalTextAlignment="End" FontSize="16" ></Label>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0"
+               Grid.Column="0" 
+               Text="%"
+               FontSize="Title"
+               x:Name="porcentaje"
+                    Clicked="porcentaje_Clicked"/>
+            <Button Grid.Row="0"
+               Grid.Column="1"
+               Text="C"
+               FontSize="Title"
+               x:Name="limpiar"
+                    Clicked="limpiar_Clicked"/>
+            <Button Grid.Row="0"
+               Grid.Column="2"
+               Text="←"
+               FontSize="Title"
+               x:Name="borrar"
+                    Clicked="borrar_Clicked"/>
+            <Button Grid.Row="0"
+               Grid.Column="3"
+               Text="÷"
+               FontSize="Title"
+               x:Name="dividir"
+                    Clicked="dividir_Clicked"/>
+            
+            <Button Grid.Row="1"
+               Grid.Column="0" 
+               Text="7"
+               FontSize="Title"
+               x:Name="siete"
+                    Clicked="siete_Clicked"/>
+            <Button Grid.Row="1"
+               Grid.Column="1"
+               Text="8"
+               FontSize="Title"
+               x:Name="ocho"
+                    Clicked="ocho_Clicked"/>
+            <Button Grid.Row="1"
+               Grid.Column="2"
+               Text="9"
+               FontSize="Title"
+               x:Name="nueve"
+                    Clicked="nueve_Clicked"/>
+            <Button Grid.Row="1"
+               Grid.Column="3"
+               Text="X"
+               FontSize="Title"
+               x:Name="multiplicar"
+                    Clicked="multiplicar_Clicked"/>
+
+            <Button Grid.Row="2"
+               Grid.Column="0" 
+               Text="4"
+               FontSize="Title"
+               x:Name="cuatro"
+                    Clicked="cuatro_Clicked"/>
+            <Button Grid.Row="2"
+               Grid.Column="1"
+               Text="5"
+               FontSize="Title"
+               x:Name="cinco"
+                    Clicked="cinco_Clicked"/>
+            <Button Grid.Row="2"
+               Grid.Column="2"
+               Text="6"
+               FontSize="Title"
+               x:Name="seis"
+                    Clicked="seis_Clicked"/>
+            <Button Grid.Row="2"
+               Grid.Column="3"
+               Text="-"
+               FontSize="Title"
+               x:Name="restar"
+                    Clicked="restar_Clicked"/>
+
+            <Button Grid.Row="3"
+               Grid.Column="0" 
+               Text="1"
+               FontSize="Title"
+               x:Name="uno"
+                    Clicked="uno_Clicked"/>
+            <Button Grid.Row="3"
+               Grid.Column="1"
+               Text="2"
+               FontSize="Title"
+               x:Name="dos"
+                    Clicked="dos_Clicked"/>
+            <Button Grid.Row="3"
+               Grid.Column="2"
+               Text="3"
+               FontSize="Title"
+               x:Name="tres"
+                    Clicked="tres_Clicked"/>
+            <Button Grid.Row="3"
+               Grid.Column="3"
+               Text="+"
+               FontSize="Title"
+               x:Name="suma"
+                    Clicked="suma_Clicked"/>
+
+            <Button Grid.Row="4"
+               Grid.Column="0" 
+               Text="+/-"
+               FontSize="Title"
+               x:Name="signo"
+                    Clicked="signo_Clicked"/>
+            <Button Grid.Row="4"
+               Grid.Column="1"
+               Text="0"
+               FontSize="Title"
+               x:Name="cero"
+                    Clicked="cero_Clicked"/>
+            <Button Grid.Row="4"
+               Grid.Column="2"
+               Text="."
+               FontSize="Title"
+               x:Name="punto"
+                    Clicked="punto_Clicked"/>
+            <Button Grid.Row="4"
+               Grid.Column="3"
+               Text="="
+               FontSize="Title"
+               x:Name="resultado"
+                    Clicked="resultado_Clicked"/>
+
+        </Grid>
+
+
+    </StackLayout>
+
+</ContentPage>
